@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ActiveJcrop</title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag 'jquery.min',
+	'jquery.color.js',
+	'jquery.Jcrop.min.js',
+	'user.js' %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+
+    <%= yield %>
+
+  </body>
+</html>

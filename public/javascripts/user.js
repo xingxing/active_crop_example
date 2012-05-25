@@ -1,0 +1,1 @@
+jQuery(function(){$('#jcrop_target').Jcrop();});
