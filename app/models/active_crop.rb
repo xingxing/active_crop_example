@@ -1,11 +1,11 @@
-module ActiveJcrop
+module ActiveCrop
   def self.included(base)
     base.extend ClassMethods
     base.instance_variable_set("@default_options", {})
   end
 
   module ClassMethods
-    def active_jcrop(options)
+    def active_crop(options)
       default_options.merge!(options)
     end
 

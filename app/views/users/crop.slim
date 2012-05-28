@@ -1,2 +1,10 @@
-#jcrop_target
+#jcrop_target{}
   = image_tag @user.avatar.url
+
+- if @user.class.default_options[:show_preview]
+ div*{'style'=>"width: 100px; height: 100px; overflow: hidden; margin-left: 5px; "}
+  = image_tag @user.avatar.url,:id => 'preview',:style=>"width: 1667px; height: 1233px; margin-left: -1297px; margin-top: -643px;"
+
+
+- User.default_options.each do |key,value|
+  = key 
